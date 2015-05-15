@@ -1,0 +1,48 @@
+import static org.junit.Assert.fail;
+import junit.framework.TestCase;
+
+public class LibraryMainTest extends TestCase {
+
+	public void testMain() {
+		fail("尚未实现");
+
+	}
+
+}
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class LibraryMainTest {
+
+	@Test
+	public void testMainStringArray() {
+		fail("尚未实现");
+	}
+
+	@Test
+	public void testMain() {
+		fail("尚未实现");
+	}
+
+}
+//以上代码是测试后显示错误的，以下是经修改后正确的测试代码，注意类型要匹配好，不要弄错了。
+
+
+
+
+package test;
+
+import static org.junit.Assert.fail;
+import junit.framework.TestCase;
+
+public class LibraryMainTest extends TestCase {
+
+	public void testMain() {
+		Double expectedAnswer = Double.valueOf(12);
+	    Double actualAnswer = Double.valueOf(2*6);
+	    assertEquals(expectedAnswer, actualAnswer);
+
+	}
+
+}
