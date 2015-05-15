@@ -1,0 +1,44 @@
+package people;
+
+public class Lreader extends User {
+	public String Gender;//性别
+	public int lend;//借出
+	public int Return;//归还
+	private String level;//级别
+	
+	public Lreader(String R_gender,int R_lend,int R_return,int R_id,String R_name,int R_age,int R_passWord){
+		super();
+		this.Gender = R_gender;
+		this.lend = R_lend;
+		this.Return = R_return;
+	}
+	public Lreader(){
+		super();
+	}
+	
+	public String getGender() {
+		return Gender;
+	}
+	public void setGender(String sex) {
+		this.Gender = sex;
+	}
+	public int getlend() {
+		return lend;
+	}
+	public void setlend(int take) {
+		this.lend = take;
+	}
+	public int getReturn() {
+		return Return;
+	}
+	public void setReturn(int revert) {
+		this.Return = revert;
+	}
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+	}
