@@ -1,0 +1,28 @@
+public class Teacher extends Lreader {
+	private String level;//级别：讲师/教授/助教 
+	
+	
+	public Teacher(String T_level,String T_gender,int T_lend,int T_return,int T_id,String T_name,int T_age,int T_passWord){
+		
+		this.level = T_level;
+	}
+	public Teacher(){
+		
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+	
+	public String toString() {
+		return "您好，  您是一名老师  \n你的级别： " + getLevel() +  "\n你的名字：" + getName() +"\n你的性别: " + getGender()
+				+ "\n你的年龄：" + getAge()+ "\n你已借：" + getlend() + "\n你已还：" + getReturn()
+				+ "\n你的用户id：" + getId()
+				 + "]";
+	}
+	
+}
