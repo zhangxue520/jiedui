@@ -1,0 +1,32 @@
+public class Admin extends User{
+	private int ad_id;
+	private String limit;
+	
+	public Admin(int A_ad_id,String A_limit,int A_id,String A_name,int A_age,int A_passWord){
+		super();
+		this.ad_id = A_ad_id;
+		this.limit = A_limit;
+	}
+	public Admin(){
+		
+	}
+	public int getAd_id() {
+		return ad_id;
+	}
+	public void setAd_id(int ad_id) {
+		this.ad_id = ad_id;
+	}
+	public String getLimit() {
+		return limit;
+	}
+	public void setLimit(String limit) {
+		this.limit = limit;
+	}
+	
+	public String toString() {
+		return "hello，你是管理员用户      \n你的管理id:" + getAd_id() +"\n你所拥有的权限:" + getLimit()
+				+ "\n你的用户id：" + getId() + "\n你的名字：" + getName()
+				+ "\n你的年龄：" + getAge() ;
+	}
+	
+}
